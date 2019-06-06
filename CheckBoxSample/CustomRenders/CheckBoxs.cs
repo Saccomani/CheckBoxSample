@@ -5,8 +5,13 @@ namespace CheckBoxSample.CustomRenders
 {
     public class CheckBoxs : View
     {
-        public static readonly BindableProperty CheckedProperty=
-            BindableProperty.Create<CheckBoxs, bool>(p => p.Checked, false, BindingMode.TwoWay, propertyChanged: OnCheckedPropertyChanged);
+
+        //saccomani: usar neste modelo
+        public static readonly BindableProperty CheckedProperty =
+       BindableProperty.Create(nameof(Checked), typeof(bool),
+       typeof(bool), default(bool), BindingMode.OneWay, propertyChanged: OnCheckedPropertyChanged);
+
+
         public static readonly BindableProperty CommandParameterProperty =
             BindableProperty.Create<CheckBoxs, object>(i => i.CommandParameter, default(object), BindingMode.OneWay);
         public static readonly BindableProperty CommandProperty =
@@ -31,15 +36,19 @@ namespace CheckBoxSample.CustomRenders
                 }
             }
         }
-
-        private static void OnCheckedPropertyChanged(BindableObject bindable, bool oldvalue, bool newvalue)
+        private static void OnCheckedPropertyChanged(BindableObject bindable, object oldValue, object newValue)
         {
             var checkBox = (CheckBoxs)bindable;
-            checkBox.Checked = newvalue;
+            checkBox.Checked = (bool)newValue;
         }
-       
-        
-       
+        //private static void OnCheckedPropertyChanged(BindableObject bindable, bool oldvalue, bool newvalue)
+        //{
+        //    var checkBox = (CheckBoxs)bindable;
+        //    checkBox.Checked = newvalue;
+        //}
+
+
+
         public object CommandParameter
         {
             get
@@ -51,9 +60,9 @@ namespace CheckBoxSample.CustomRenders
                 this.SetValue(CommandParameterProperty, value);
             }
         }
-       
-      
-        
+
+
+
         public Command Command
         {
             get
@@ -71,7 +80,7 @@ namespace CheckBoxSample.CustomRenders
 
     public class EventArgs<T> : EventArgs
     {
-       
+
         public EventArgs(T value)
         {
             this.Value = value;
@@ -90,7 +99,7 @@ namespace CheckBoxSample.CustomRenders
 
     public static class EventExtensions
     {
-       
+
         public static void Invoke<T>(this EventHandler<EventArgs<T>> handler, object sender, T value)
         {
             var handle = handler;
@@ -99,7 +108,7 @@ namespace CheckBoxSample.CustomRenders
                 handle(sender, new EventArgs<T>(value));
             }
         }
-               
+
         public static bool TryInvoke<T>(this EventHandler<T> handler, object sender, T args) where T : EventArgs
         {
             var handle = handler;
