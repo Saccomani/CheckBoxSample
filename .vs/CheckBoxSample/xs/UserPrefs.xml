@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{B9D289C0-61C1-4002-9DB7-FF683F30F490}|Default">
+  <MonoDevelop.Ide.ItemProperties.CheckBoxSample.Android PreferredExecutionTarget="Android.3300bf4511493503" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CheckBoxSample/MainPage.xaml.cs">
+    <Files>
+      <File FileName="CheckBoxSample/MainPage.xaml" Line="13" Column="33" />
+      <File FileName="CheckBoxSample/MainPage.xaml.cs" Line="35" Column="1" />
+      <File FileName="CheckBoxSample/MarketChoiceViewModel.cs" Line="42" Column="20" />
+      <File FileName="CheckBoxSample/CustomRenders/CheckBoxs.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CheckBoxSample" expanded="True">
+            <Node name="CheckBoxSample" expanded="True">
+              <Node name="CustomRenders" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True">
+                <Node name="MainPage.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="CheckBoxSample.iOS" expanded="True">
+              <Node name="CustomRenders" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CheckBoxSample.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.CheckBoxSample.UITests FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/MainPage.xaml.cs" relfile="CheckBoxSample/MainPage.xaml.cs" line="35" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

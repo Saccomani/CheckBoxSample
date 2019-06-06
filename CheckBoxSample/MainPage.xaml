@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" 
+             xmlns:controls="clr-namespace:CheckBoxSample.CustomRenders;assembly=CheckBoxSample" 
+             x:Class="CheckBoxSample.MainPage">
+   
+       
+         <ListView SeparatorColor="Gray" ItemsSource="{Binding Markets}" HasUnevenRows="true" x:Name="lstViewDetalhes">
+                <ListView.Header>
+                    <StackLayout Padding="5,30,5,30">
+                        <Label 
+                            Text="Selecione um dos mercados que você quer receber encartes, ofertas e informações :" 
+                            FontSize="20"
+                            FontAttributes="Bold" 
+                            TextColor="White" 
+                            HorizontalTextAlignment="Center" 
+                            VerticalTextAlignment="Center">
+                        </Label>
+                    </StackLayout>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10,25,15,25">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label 
+                                    Grid.Row="0"
+                                    Grid.Column="1" 
+                                    Text="{Binding Nome}"
+                                    VerticalTextAlignment="End" 
+                                    HorizontalTextAlignment="Start"
+                                    FontSize="Medium" 
+                                    TextColor="Black" 
+                                    FontAttributes="Bold" 
+                                />
+                                <Label 
+                                    x:Name="lstEndereco"
+                                    Text="{Binding Endereco}" 
+                                    Grid.Row="1" 
+                                    Grid.Column="1" 
+                                    FontSize="Small" 
+                                    VerticalTextAlignment="Start" 
+                                    HorizontalTextAlignment="Start"
+                                    TextColor="Gray" 
+                                />
+                                <controls:CheckBoxs 
+                                    x:Name="checkBox" 
+                                    HeightRequest="30" 
+                                    WidthRequest="30" 
+                                    HorizontalOptions="CenterAndExpand" 
+                                    VerticalOptions="Center" 
+                                    CommandParameter="{Binding .}" 
+                                    Grid.Row="0" 
+                                    Grid.Column="0" 
+                                    Grid.RowSpan="2" 
+                                    CheckedChanged="AddListaCheck"
+                                    Checked="{Binding Ativo}">
+                                </controls:CheckBoxs>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.Footer>
+                    <StackLayout Spacing="10" Padding="0,60,0,10" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Button 
+                                x:Name="btnContinuar"
+                                Clicked="Handle_Clicked" 
+                                Text="Salvar"
+                                TextColor="#00406E" 
+                                BackgroundColor="Transparent"
+                                BorderColor="#00406E" 
+                                BorderWidth="1" 
+                                BorderRadius="3" 
+                                WidthRequest="100" 
+                                HeightRequest="50">
+                            </Button>
+                        </StackLayout>
+                        <ActivityIndicator 
+                            x:Name="actInd" 
+                            Color="#008cdc" 
+                            IsRunning="false" 
+                            IsVisible="false" 
+                        />
+                        <Label 
+                            IsVisible="false"
+                            x:Name="carregando"
+                            Text="Carregando..." 
+                        />
+                    </StackLayout>
+                </ListView.Footer>
+            </ListView>
+   
+</ContentPage>

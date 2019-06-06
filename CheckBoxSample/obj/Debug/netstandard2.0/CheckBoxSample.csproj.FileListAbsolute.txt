@@ -1,0 +1,14 @@
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/obj/Debug/netstandard2.0/CheckBoxSample.csprojAssemblyReference.cache
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/obj/Debug/netstandard2.0/CheckBoxSample.csproj.CoreCompileInputs.cache
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/obj/Debug/netstandard2.0/CheckBoxSample.AssemblyInfoInputs.cache
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/obj/Debug/netstandard2.0/CheckBoxSample.AssemblyInfo.cs
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/obj/Debug/netstandard2.0/CheckBoxSample.dll
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/obj/Debug/netstandard2.0/ref/CheckBoxSample.dll
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/obj/Debug/netstandard2.0/CheckBoxSample.pdb
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/bin/Debug/netstandard2.0/CheckBoxSample.deps.json
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/bin/Debug/netstandard2.0/CheckBoxSample.dll
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/bin/Debug/netstandard2.0/ref/CheckBoxSample.dll
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/bin/Debug/netstandard2.0/CheckBoxSample.pdb
+/Users/tiagobernaiaspompeo/Documents/CheckBoxSample/CheckBoxSample/obj/Debug/netstandard2.0/XamlC.stamp
